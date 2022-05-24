@@ -9,15 +9,6 @@
   <meta name="generator" content="HeroKu">
   <title>Subscribe Page</title>
 
-
-
-
-
-
-
-
-  <!-- Favicons -->
-
   <meta name="theme-color" content="#712cf9">
 
 
@@ -26,7 +17,7 @@
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
-  <link href="signin.css" rel="stylesheet">
+  <link href="../css/signin.css" rel="stylesheet">
 </head>
 
 
@@ -34,26 +25,28 @@
 <body class="text-center">
 
   <main class="form-signin w-100 m-auto">
-    <form>
-      <img class="mb-4" src="#" alt="" width="72" height="57">
+
+
+    <form action="/" class="subscribeUserInfo" method="POST">
+      <img class="mb-4" src="../assets/logo.svg" alt="" width="72" height="57">
       <h1 class="h3 mb-3 fw-normal">Newsletter Subscribe</h1>
 
       <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
         <label for="floatingInput">Your best email</label>
       </div>
       <div class="form-floating">
-        <input type="text" class="form-control" id="floatingPassword" placeholder="example: João Maria">
+        <input type="text" class="form-control" id="floatingPassword" name="name" placeholder="example: João Maria">
         <label for="floatingPassword">Your name</label>
       </div>
 
       <div class="checkbox mb-3">
         <label>
-          <input type="checkbox" value="remember-me"> Remember me
+          <input type="checkbox" name="subscribe" value="remember-me"> Remember me
         </label>
       </div>
-      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign me up!</button>
+      <p class="mt-5 mb-3 text-muted">&copy; Junio KOI - 2022</p>
     </form>
   </main>
 
