@@ -3,7 +3,6 @@ import express from "express";
 import https from 'https';
 import path from 'path';
 import 'dotenv/config';
-import { response } from 'express';
 
 
 const __dirname = path.resolve( path.dirname( '' ) );
@@ -64,3 +63,4 @@ app.post( "/", ( req, res ) => {
 app.listen( PORT, () => {
   console.log( `server is running on PORT: ${PORT}` );
 } );
+
