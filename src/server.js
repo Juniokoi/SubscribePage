@@ -12,7 +12,7 @@ const __dirname = path.resolve( path.dirname( '' ) );
 const app = express();
 app.use( express.static( 'src' ) );
 app.use( bodyParser.urlencoded( { extended: true } ) );
-const PORT = 3333;
+const PORT = process.env.PORT || 3333;
 
 app.get( '/', ( req, res ) => {
   res.sendFile( `${__dirname}/src/pages/index.html` );
@@ -64,9 +64,3 @@ app.post( "/", ( req, res ) => {
 app.listen( PORT, () => {
   console.log( `server is running on PORT: ${PORT}` );
 } );
-
-//API KEY 
-// 7f72d4999e65c056152b52599d24a48e-us17
-
-// LIST ID
-// a907e6d26f
